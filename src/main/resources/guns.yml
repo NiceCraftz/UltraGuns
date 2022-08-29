@@ -1,0 +1,25 @@
+guns:
+  shotgun:
+    permission: "guns.shotgun"
+    damage: 10
+    reload: 1.5
+    max-ammo: 12
+    ammo-type: "STONE_BUTTON"
+    shoot-delay: 0.5
+    type:
+      shoot: "spread"
+      quantity: 4
+      spread: 0.4
+    item:
+      type: "GOLDEN_HORSE_ARMOR"
+      name: "&cShotgun"
+      lore: [ ]
+    projectile:
+      type: "SNOWBALL" # OR ARROW
+      velocity: 2
+    effects:
+      hit-particle: ""
+      shoot-particle: ""
+      shoot-sound: ""
+      hit-sound: ""
+      reload-sound: ""

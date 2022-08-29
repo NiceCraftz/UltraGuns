@@ -7,7 +7,6 @@ public final class UltraGuns extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("Test");
-
     }
 
     @Override
