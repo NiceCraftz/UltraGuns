@@ -1,0 +1,7 @@
+name: UltraGuns
+version: '${project.version}'
+main: tech.calista.ultraguns.UltraGuns
+prefix: UltraGuns
+authors: [ NiceCraftz ]
+description: An epic alternative to crackshot.
+website: https://t.me/CraftzLounge
