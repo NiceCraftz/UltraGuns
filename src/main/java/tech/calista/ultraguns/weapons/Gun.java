@@ -2,7 +2,6 @@ package tech.calista.ultraguns.weapons;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import org.bukkit.inventory.ItemStack;
 import tech.calista.ultraguns.types.ProjectileType;
 
@@ -22,4 +21,9 @@ public class Gun {
 
     private final GunEffects effects;
     private final ProjectileType projectileType;
+
+
+    public void shoot() {
+
+    }
 }
