@@ -1,5 +1,6 @@
 package tech.calista.ultraguns.repository;
 
+import java.util.Collection;
 import java.util.Optional;
 
 public interface Repository<K, V> {
@@ -12,4 +13,8 @@ public interface Repository<K, V> {
     boolean contains(K key);
 
     void clear();
+
+    Collection<V> getAll();
+
+    void load();
 }

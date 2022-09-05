@@ -2,8 +2,10 @@ package tech.calista.ultraguns.weapons;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.bukkit.Particle;
+import org.bukkit.Sound;
+import org.bukkit.entity.Projectile;
 import org.bukkit.inventory.ItemStack;
-import tech.calista.ultraguns.types.ProjectileType;
 
 @RequiredArgsConstructor
 @Getter
@@ -14,16 +16,21 @@ public class Gun {
     private final ItemStack gunItem;
 
     private final double damage;
+    private final int maxAmmo;
+    private final Class<Projectile> projectileClass;
+
     private final double reloadTime;
     private final double shootDelay;
 
-    private final int maxAmmo;
+    private Sound shootSound = null;
+    private Sound hitSound = null;
+    private Particle shootParticle = null;
+    private Particle hitParticle = null;
 
-    private final GunEffects effects;
-    private final ProjectileType projectileType;
-
-
-    public void shoot() {
-
+    public void applyEffects(Sound shootSound, Sound hitSound, Particle shootParticle, Particle hitParticle) {
+        this.shootSound = shootSound;
+        this.hitSound = hitSound;
+        this.shootParticle = shootParticle;
+        this.hitParticle = hitParticle;
     }
 }

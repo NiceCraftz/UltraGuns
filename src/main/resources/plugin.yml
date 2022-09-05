@@ -5,3 +5,8 @@ prefix: UltraGuns
 authors: [ NiceCraftz ]
 description: An epic alternative to crackshot.
 website: https://t.me/CraftzLounge
+
+commands:
+  guns:
+    description: "plugin main command"
+    aliases: [ gun ]
